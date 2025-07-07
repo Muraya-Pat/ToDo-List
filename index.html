@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart To-Do Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📝 Smart To-Do Dashboard</h1>
+    <p>Track your tasks efficiently and stay productive!</p>
+  </header>
+
+  <main>
+    <section class="task-form-section">
+      <form id="taskForm">
+        <label for="taskInput">Task:</label>
+        <input type="text" id="taskInput" required placeholder="Enter your task..." />
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" />
+
+        <label for="priority">Priority:</label>
+        <select id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="filters">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+    </section>
+
+    <section id="taskSection">
+      <ul id="taskList"></ul>
+    </section>
+
+    <section class="stats">
+      <p>Total Tasks: <span id="totalCount">0</span></p>
+      <p>Completed: <span id="completedCount">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Patrick</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
