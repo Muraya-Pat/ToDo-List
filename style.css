@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: #0077cc;
+  background-color: #a109c7;
   color: white;
   padding: 20px;
   text-align: center;
@@ -91,7 +91,7 @@ button:hover {
 .filter-btn {
   margin: 0 5px;
   padding: 5px 10px;
-  border: 1px solid #0077cc;
+  border: 10px solid #0077cc;
   background: white;
   color: #0077cc;
   cursor: pointer;
@@ -99,7 +99,7 @@ button:hover {
 }
 
 .filter-btn:hover {
-  background-color: #0077cc;
+  background-color: #7ecc00;
   color: white;
 }
 
@@ -114,6 +114,6 @@ button:hover {
 footer {
   text-align: center;
   padding: 15px;
-  background: #eaeaea;
+  background: #d37fc8;
   margin-top: 30px;
 }
